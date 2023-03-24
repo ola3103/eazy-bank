@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Russo+One&family=Sofia+Sans+Condensed:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&family=Titillium+Web:wght@600;700;900&display=swap");
 
 * {
   margin: 0;
@@ -25,12 +25,12 @@
   --secondary-color-light-2--: #80faea;
   --secondary-color-light-3--: #b3fcf2;
   --secondary-color-light-4--: #e6fefb;
-  --head-font--: "Russo One", sans-serif;
+  --head-font--: "Titillium Web", sans-serif;
 }
 
 body {
   font-size: 16px;
-  font-family: "Sofia Sans Condensed", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 a {
@@ -108,7 +108,7 @@ a {
 .banner-name {
   grid-column: 2/3;
   color: var(--primary-color-light-4--);
-  font-size: 1.5rem;
+  font-size: 1rem;
   margin-left: 4rem;
 }
 .banner-name:hover {
@@ -209,20 +209,94 @@ Hero Section
 ---------------- */
 .hero-section-container {
   max-width: 1000px;
-  margin: 0 auto;
+  margin: 4rem auto 0 auto;
 }
 .hero-header {
   font-family: var(--head-font--);
-  font-size: 5rem;
+  font-size: 4rem;
+  font-weight: 500;
   background: -webkit-linear-gradient(
-    45deg,
-    #5108c8,
-    #006fff,
-    #00a3ff,
-    #00cff0,
-    #00f5d4
+    90deg,
+    rgba(255, 255, 255, 0.9),
+    rgba(255, 255, 255, 0.6)
   );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+.hero-header-title-box {
+  margin: 0 0 1.5rem 0;
+}
+.hero-header-title-box .feature::before {
+  content: " ";
+  font-size: 5rem;
+  font-family: var(--head-font--);
+  font-weight: 600;
+  background: -webkit-linear-gradient(
+    270deg,
+    var(--primary-color-light-1--),
+    var(--secondary-color-light-1--)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--primary-color-light-4--);
+  transition: 0.3s ease-in-out;
+  animation: feature 10s ease-in-out infinite;
+  padding: 0;
+  margin: 0;
+  line-height: 0.5;
+}
+
+@keyframes feature {
+  0% {
+    content: "Zero Fees";
+  }
+  25% {
+    content: "Free Transfer";
+  }
+  50% {
+    content: "Unlimited Rewards";
+  }
+  100% {
+    content: "Investments";
+  }
+}
+
+.hero-header-subtitle,
+.hero-header-subtitle-2 {
+  color: var(--primary-color-light-4--);
+  font-size: 1rem;
+  margin: 0.75rem 0;
+}
+
+.get-started-btn {
+  color: var(--secondary-color-light-4--);
+  background: var(--primary-color--);
+  padding: 1rem 1.5rem;
+  margin: 1.25rem 0;
+  display: inline-block;
+}
+.hero-header-subtitle-3 {
+  color: var(--primary-color-light-4--);
+  display: flex;
+  margin: 1rem 0 0 0;
+}
+.hero-header-subtitle-3 img {
+  width: 48px;
+  margin: 0 0.5rem 0 0;
+}
+
+/* --------------------------
+Section One
+---------------------------- */
+
+.dashboard-box {
+  display: flex;
+  justify-content: center;
+  background: var(--primary-color-dark-4--);
+}
+
+.dashboard-box img {
+  width: 80%;
 }
