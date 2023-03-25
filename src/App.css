@@ -290,13 +290,25 @@ Hero Section
 /* --------------------------
 Section One
 ---------------------------- */
-
-.dashboard-box {
-  display: flex;
-  justify-content: center;
+.sponsor {
+  padding: 2rem 0;
   background: var(--primary-color-dark-4--);
 }
+.sponsor-box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 
-.dashboard-box img {
-  width: 80%;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.sponsor-box img {
+  max-width: 128px;
+  height: fit-content;
+  filter: grayscale(100%);
+  transition: all 0.3s ease;
+}
+.sponsor-box img:hover {
+  filter: grayscale(0);
 }
