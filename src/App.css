@@ -40,7 +40,7 @@ a {
   width: 100%;
   background: var(--primary-color-dark-4--);
   margin: 0 auto;
-  height: 100vh;
+  /* height: 100vh; */
   overflow: hidden;
 }
 .lines {
@@ -291,7 +291,7 @@ Hero Section
 Section One
 ---------------------------- */
 .sponsor {
-  padding: 2rem 0;
+  padding: 4rem 0;
   background: var(--primary-color-dark-4--);
 }
 .sponsor-box {
@@ -311,4 +311,98 @@ Section One
 }
 .sponsor-box img:hover {
   filter: grayscale(0);
+}
+
+.section-2 {
+  padding: 4rem 0;
+  background: var(--primary-color-dark-4--);
+}
+.section-2-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+.section-2-lines {
+  position: absolute;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  opacity: 0.25;
+}
+.section-2-lines:first-child {
+  left: 0;
+}
+.section-2-lines:nth-child(2) {
+  left: 25%;
+}
+.section-2-lines:nth-child(3) {
+  left: 50%;
+}
+.section-2-lines:nth-child(4) {
+  left: 75%;
+}
+.section-2-lines:nth-child(5) {
+  left: 100%;
+}
+.section-2-box {
+  display: block;
+  text-align: center;
+  padding: 2rem 0;
+  line-height: 1.2;
+}
+.section-2 .section-2-title {
+  font-family: var(--head-font--);
+  padding: 1rem;
+  font-size: 1rem;
+  color: var(--primary-color-light-4--);
+  background: var(--primary-color-dark-4--);
+  text-transform: uppercase;
+  letter-spacing: 0.75px;
+  line-height: 1;
+}
+.section-2-subtitle-1 {
+  font-family: var(--head-font--);
+
+  color: var(--primary-color-light-4--);
+  font-size: 2.75rem;
+  font-weight: 700;
+  line-height: 1;
+}
+.section-2-subtitle-2 {
+  font-family: var(--head-font--);
+  font-size: 5rem;
+  font-weight: 500;
+  background: -webkit-linear-gradient(
+    270deg,
+    var(--primary-color-light-1--),
+    var(--secondary-color-light-1--)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ----------------------
+Section 3
+--------------------------*/
+/* .section-3 {
+  width: 100%;
+  height: 100vh;
+} */
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
