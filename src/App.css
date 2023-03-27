@@ -386,10 +386,33 @@ Section One
 /* ----------------------
 Section 3
 --------------------------*/
-/* .section-3 {
+.section-3 {
   width: 100%;
   height: 100vh;
-} */
+  padding: 4rem 0;
+  background-image: linear-gradient(
+    145deg,
+    hsl(263deg 91% 5%) 0%,
+    hsl(267deg 92% 6%) 57%,
+    hsl(265deg 92% 8%) 74%,
+    hsl(256deg 78% 12%) 83%,
+    hsl(255deg 77% 19%) 89%,
+    hsl(261deg 88% 25%) 92%,
+    hsl(259deg 83% 24%) 95%,
+    hsl(254deg 75% 17%) 98%,
+    hsl(263deg 91% 9%) 100%
+  );
+}
+.section-3-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  background: var(--primary-color-dark-4--);
+  padding: 2rem 3rem 4.5rem 3rem;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 18px 50px -10px;
+}
+.section-3-top-part {
+  height: 30vh;
+}
 
 .swiper {
   width: 100%;
@@ -398,11 +421,102 @@ Section 3
 
 .swiper-slide {
   text-align: center;
-  font-size: 18px;
-  background: #fff;
-
-  /* Center slide text vertically */
   display: flex;
   justify-content: center;
   align-items: center;
+  background: var(--primary-color-light-2--);
+  box-shadow: rgba(255, 225, 225, 0.4) 0px 7px 29px 0px;
+  padding: 4rem 9rem;
+  margin: 0 auto;
+}
+
+.reward-box {
+  display: flex;
+  justify-content: space-between;
+  background: var(--primary-color-dark-3--);
+  padding: 1rem 1.25rem;
+}
+.reward-box-3 {
+  background-image: linear-gradient(
+    145deg,
+    hsl(263deg 91% 5%) 0%,
+    hsl(228deg 84% 5%) 17%,
+    hsl(212deg 100% 5%) 33%,
+    hsl(202deg 100% 5%) 50%,
+    hsl(193deg 100% 5%) 67%,
+    hsl(183deg 100% 5%) 83%,
+    hsl(173deg 100% 5%) 100%
+  );
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 8px 24px;
+}
+.reward-box-2 {
+  background-image: linear-gradient(
+    220deg,
+    hsl(263deg 91% 5%) 11%,
+    hsl(221deg 43% 15%) 48%,
+    hsl(204deg 72% 21%) 62%,
+    hsl(195deg 100% 24%) 72%,
+    hsl(189deg 100% 29%) 80%,
+    hsl(181deg 100% 32%) 88%,
+    hsl(172deg 100% 38%) 100%
+  );
+  box-shadow: rgba(0, 196, 170, 0.3) 0px 8px 24px;
+}
+.reward-logo-box img {
+  width: 64px;
+  height: fit-content;
+  align-self: center;
+  padding: 0 1rem 0 0;
+}
+.reward-logo-box {
+  align-self: center;
+  display: flex;
+  text-align: left;
+}
+.reward-text-box {
+  color: var(--primary-color-light-4--);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.reward-tag {
+  color: var(--primary-color-light-4--);
+  background: var(--primary-color--);
+  display: inline-flex;
+  align-self: flex-start;
+  padding: 0.5rem;
+  font-size: 0.75rem;
+}
+
+.section-3-bottom-part {
+  text-align: center;
+  margin: 2rem 0 0 0;
+}
+.section-3-title {
+  color: var(--primary-color-light-4--);
+  font-family: var(--head-font--);
+  font-size: 6rem;
+  line-height: 1;
+}
+.section-3-title-1 {
+  font-family: var(--head-font--);
+  font-size: 6rem;
+  background: -webkit-linear-gradient(
+    270deg,
+    var(--primary-color-light-1--),
+    var(--secondary-color-light-1--)
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: var(--primary-color-light-4--);
+  padding: 0;
+  margin: 0 0 1rem 0;
+  line-height: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: var(--primary-color-dark-3--) !important;
+}
+.section-3-title-2 {
+  color: var(--primary-color-light-4--);
+  font-weight: 600;
 }
