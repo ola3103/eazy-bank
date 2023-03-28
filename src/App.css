@@ -520,3 +520,19 @@ Section 3
   color: var(--primary-color-light-4--);
   font-weight: 600;
 }
+
+/* ----------------------
+Section 4
+--------------------------*/
+
+.section-4-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+.section-4-side-1-img {
+  max-width: 450px;
+  background: firebrick;
+}
