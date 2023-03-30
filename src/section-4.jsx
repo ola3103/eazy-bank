@@ -8,10 +8,15 @@ const SectionFour = () => {
           <p className="section-4-side-1-text">
             No hidden fees. No minimum balance.
           </p>
-          <p className="section-4-side-1-text-1">
+          <p className="section-4-side-1-text">
             No-cost premium balance account
           </p>
-          <img src="/section-4-1.png" className="section-4-side-1-img" />
+          <ul className="section-4-side-1-hidden-box">
+            <li className="single-hidden-box">Minimum Balance Requirement</li>
+            <li className="single-hidden-box">Account fees</li>
+            <li className="single-hidden-box">Transaction fees</li>
+            <li className="single-hidden-box">Minimum Balance Requirement</li>
+          </ul>
         </div>
         <div className="section-4-side-2">
           <p className="section-4-side-2-title-1">Free</p>
