@@ -19,7 +19,7 @@ const HeroSection = () => {
         </a>
         <div className="hero-header-subtitle-3">
           <img src="/logo.png" />
-          <p>
+          <p className="hero-cta">
             Sign up today and earn up to $200. Certain terms and conditions may
             apply.
           </p>
