@@ -976,7 +976,8 @@ Footer
 .copyright {
   color: var(--primary-color-light-4--);
   text-align: center;
-  margin: 4.5rem 0 1rem 0;
+  margin: 4.5rem 0 0 0;
+  padding: 0 0 2rem 0;
 }
 
 /* ----------------------

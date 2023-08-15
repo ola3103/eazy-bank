@@ -10,13 +10,13 @@ const SectionFive = () => {
             <div className="section-5-side-1-box-1-download-icon">
               <p className="section-5-side-1-box-1-download-icon-1">
                 <span>
-                  <i class="bx bxl-apple"></i>
+                  <i className="bx bxl-apple"></i>
                 </span>
                 Eazy
               </p>
               <p className="section-5-side-1-box-1-download-icon-2">
                 <span>
-                  <i class="bx bxl-google"></i>
+                  <i className="bx bxl-google"></i>
                 </span>
                 Eazy
               </p>

@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { gsap } from "gsap";
+import { useLayoutEffect, useRef } from "react";
 
 const NavBar = () => {
   const [navState, setNavState] = useState(false);
@@ -8,16 +10,30 @@ const NavBar = () => {
     console.log(navState);
   };
 
+  const comp = useRef();
+
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.fromTo(
+        ".nav-animate",
+        { opacity: 0, duration: 0 },
+        { opacity: 1, duration: 0.5, ease: "back.out(1.7)", stagger: 0.5 }
+      );
+    });
+  });
+
   return (
-    <nav className="nav-bar">
+    <nav className="nav-bar" ref={comp}>
       <div className="nav-bar-container">
-        <a href="" className="logo">
+        <a href="" className="logo nav-animate">
           <img src={navState ? "/logo-colored.png" : "logo.png"} alt="logo" />
         </a>
         <div className="nav-box" style={{ top: navState ? "0" : "-120%" }}>
           <ul className="nav-item">
             <li className="nav-link">
-              <a href="">Products</a>
+              <a href="" className="nav-animate">
+                Products
+              </a>
               <div className="drop-down-content">
                 <p className="drop-down-content-title">Products</p>
                 <a href="" className="drop-down-content-link">
@@ -35,7 +51,9 @@ const NavBar = () => {
               </div>
             </li>
             <li className="nav-link">
-              <a href="">Company</a>
+              <a href="" className="nav-animate">
+                Company
+              </a>
               <div className="drop-down-content">
                 <p className="drop-down-content-title">Company</p>
                 <a href="" className="drop-down-content-link">
@@ -53,7 +71,9 @@ const NavBar = () => {
               </div>
             </li>
             <li className="nav-link">
-              <a href="">Support</a>
+              <a href="" className="nav-animate">
+                Support
+              </a>
               <div className="drop-down-content">
                 <p className="drop-down-content-title">Support</p>
                 <a href="" className="drop-down-content-link">
@@ -65,11 +85,11 @@ const NavBar = () => {
               </div>
             </li>
           </ul>
-          <div className="log-sign-up">
-            <a className="log-in-btn" href="">
+          <div className="log-sign-up ">
+            <a className="log-in-btn nav-animate" href="">
               log In
             </a>
-            <a className="sign-up-btn" href="">
+            <a className="sign-up-btn nav-animate" href="">
               Sign Up
             </a>
           </div>
